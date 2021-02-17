@@ -15,7 +15,7 @@ function Reddit() {
 
   return(
     
-    <div style={{backgroundColor:"grey"}}>
+    <div style={{backgroundColor:"#D9D9F3"}}>
 
 
 <Navbar bg="light" expand="lg">
@@ -51,7 +51,7 @@ function Reddit() {
       Sign Up
     </Button>
 
-      <NavDropdown title="more" id="basic-nav-dropdown">
+      <NavDropdown title="Profile" id="basic-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -66,7 +66,7 @@ function Reddit() {
 
 <div style={{marginTop: "2%" }}>
 
-  <h6 style={{marginTop: "2%", paddingLeft:"8.5%" }} >Trending Today</h6>
+  <h6 style={{marginTop: "2%", paddingLeft:"11.5%" }} >Trending Today</h6>
   </div>
 
 
@@ -76,11 +76,12 @@ function Reddit() {
 
 
 
-<Card style={{ width: '20%',display: "inline-block",  margin: "0.5%" }}>
+<Card style={{ width: '250px',display: "inline-block",  margin: "0.5%" }}>
   <Card.Body>
   <Card.Link href="#">Card Title</Card.Link>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
     <Card.Text>
+      Some quick example
       Some quick example
     </Card.Text>
     {/* <Card.Link href="#">Card Link</Card.Link>
@@ -88,11 +89,12 @@ function Reddit() {
   </Card.Body>
 </Card>
 
-<Card style={{ width: '20%',display: "inline-block", margin: "0.5%" }}>
+<Card style={{ width: '250px',display: "inline-block", margin: "0.5%" }}>
   <Card.Body>
   <Card.Link href="#">Card Title</Card.Link>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
     <Card.Text>
+      Some quick example 
       Some quick example 
     </Card.Text>
     {/* <Card.Link href="#">Card Link</Card.Link>
@@ -100,11 +102,12 @@ function Reddit() {
   </Card.Body>
 </Card>
 
-<Card style={{ width: '20%',display: "inline-block" , margin: "0.5%"}}>
+<Card style={{ width: '250px',display: "inline-block" , margin: "0.5%"}}>
   <Card.Body>
   <Card.Link href="#">Card Title</Card.Link>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
     <Card.Text>
+      Some quick example 
       Some quick example 
     </Card.Text>
     {/* <Card.Link href="#">Card Title</Card.Link>
@@ -112,11 +115,12 @@ function Reddit() {
   </Card.Body>
 </Card>
 
-<Card style={{ width: '20%',display: "inline-block",  margin: "0.5%" }}>
+<Card style={{ width: '250px',display: "inline-block",  margin: "0.5%" }}>
   <Card.Body>
     <Card.Link href="#">Card Title</Card.Link>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
     <Card.Text>
+      Some quick example 
       Some quick example 
     </Card.Text>
     {/* <Card.Link href="#">Card Link</Card.Link>
@@ -127,37 +131,65 @@ function Reddit() {
 
 </div>
 
-<div style={{width:"80%",border:"red 1px solid"}} >
-
-<div style={{ width:"50%", marginLeft:"9%", padding:"1%", float:"left" }}>
 
 
-  <div style={{ marginTop:"1%" }}>
-    <h5>Title</h5>
-    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg"/>
-  </div>
-  <div style={{ marginTop:"1%" }}>
-    <h5>Title</h5>
-    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg"/>
-  </div>
-  <div style={{ marginTop:"1%" }}>
-    <h5>Title</h5>
-    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg"/>
-  </div>
-  <div style={{ marginTop:"1%" }}>
-    <h5>Title</h5>
-    <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg"/>
-  </div>
+
+
+
+<div style={{width:"86%", display:"flex", marginLeft:"10%"}} >
+
+
+
+
+
+
+<div style={{ width:"65%",padding:"2%"}}>
+
+<Card style={{padding:"2%", marginTop:"2%"}}>
+    <Card.Img variant="top" style={{width:"100%"}} src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" />
+    <Card.Body>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  
+  <Card style={{padding:"2%", marginTop:"2%"}}>
+    <Card.Img variant="top" style={{width:"100%"}} src="https://expertphotography.com/wp-content/uploads/2018/07/nature-photography.jpg" />
+    <Card.Body>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  <Card style={{padding:"2%", marginTop:"2%"}}>
+    <Card.Img variant="top" style={{width:"100%"}} src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" />
+    <Card.Body>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+    </Card.Body>
+  </Card>
 
 
 
 
 </div>
 
-  <div style={{width:"30%" , float:"right" }}>
 
 
-  <Card style={{ width: '18rem', marginTop:"3%" }}>
+
+
+
+
+
+  <div style={{width:"20%", paddingLeft:"1%", marginTop:"3%" }}>
+
+  <Card style={{ width: '280px', marginTop:"3%" }}>
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -170,7 +202,7 @@ function Reddit() {
   </Card.Body>
 </Card>
 
-<Card style={{ width: '18rem', marginTop:"3%" }}>
+<Card style={{ width: '280px', marginTop:"3%" }}>
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -183,7 +215,72 @@ function Reddit() {
   </Card.Body>
 </Card>
 
-<Card style={{ width: '18rem', marginTop:"3%" }}>
+<Card style={{ width: '280px', marginTop:"3%" }}>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '280px', marginTop:"3%" }}>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '280px', marginTop:"3%" }}>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '280px', marginTop:"3%" }}>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '280px', marginTop:"3%" }}>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '280px', marginTop:"3%" }}>
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
@@ -197,7 +294,22 @@ function Reddit() {
 </Card>
  </div>
 
+
+
+
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 )
