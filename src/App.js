@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import './index.css'
 
 
 import {
@@ -10,9 +11,9 @@ import {
   Link
 } from "react-router-dom";
 
-import login from "./components/Login/login"
-import signup from "./components/Signup/signup"
-import dashboard from "./components/dashboard/dashboard"
+import Login from "./components/Login/login"
+import Signup from "./components/Signup/signup"
+import Dashboard from "./components/dashboard/dashboard"
 
 
 
@@ -45,20 +46,19 @@ function App() {
 
         <Switch>
 
-
-          <Route exact={true} path="/">
-            <login />
-          </Route>
-
-
           <Route path="/dashboard">
-            <dashboard />
+            <Dashboard />
           </Route>
-
 
           <Route path="/signup">
-            <signup />
+            <Signup />
           </Route>
+
+          <Route exact={true}  path="/">
+            <Login />
+          </Route>
+
+
 
 
 

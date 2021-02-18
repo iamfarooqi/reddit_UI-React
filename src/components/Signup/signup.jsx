@@ -9,6 +9,10 @@ function Signup() {
 
     return(
 
+        <div>
+
+        <h1>SignUp</h1>
+
         <form>
             <label htmlFor="">Name:</label>
             <input type="text"/>
@@ -21,7 +25,10 @@ function Signup() {
 
             <button>Signup</button>
         </form>
+
+        </div>
     )
     
 }
-ReactDOM.render(<Signup/>,document.getElementById("root"))
+
+export default Signup;

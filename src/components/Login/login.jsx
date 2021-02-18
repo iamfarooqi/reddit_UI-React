@@ -9,6 +9,9 @@ function Login() {
 
     return(
 
+        <div>
+            <h1>Login</h1>
+
         <form>
 
 
@@ -20,7 +23,9 @@ function Login() {
 
             <button>Login</button>
         </form>
+        </div>
     )
     
 }
-ReactDOM.render(<Login/>,document.getElementById("root"))
+
+export default Login;
