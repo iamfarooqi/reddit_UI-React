@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -12,6 +13,26 @@ import FormControl from 'react-bootstrap/FormControl';
 import Card from 'react-bootstrap/Card';
 
 function Reddit() {
+
+  const [posts, setPosts] = React.useState([]);
+  const [click, setClick] = React.useState(true);
+
+
+
+  React.useEffect(() => {
+
+    console.log("I M RUNING");
+
+    axios.get(`https://www.reddit.com/r/reactjs.json`)
+      .then(res => {
+        const newPosts = res.data.data.children
+          .map(obj => obj.data);
+  
+        setPosts(newPosts);
+      });
+
+
+  }, [click]);
 
   return(
     
@@ -145,6 +166,31 @@ function Reddit() {
 
 <div style={{ width:"65%",padding:"2%"}}>
 
+
+<div>
+
+      {/* <button onClick={ ()=>setClick(!click)  }>Reload</button> */}
+      <ul>
+        {posts.map(post => (
+          <div className="checks" key={post.id} style={{marginTop:"2%"}}>
+          <Card className="card">
+              <Card.Body >
+                  <Card.Title>{post.title}</Card.Title>
+                  {/* <Card.Subtitle className="mb-2 text-muted">{post.subreddit}</Card.Subtitle> */}
+                  {/* <Card.Subtitle className="mb-2 text-muted"><span>ups:</span>{post.ups}</Card.Subtitle> */}
+                  {/* <Card.Subtitle className="mb-2 text-muted"><span>upvote_ratio:</span>{post.upvote_ratio}</Card.Subtitle> */}
+                  <Card.Text>{post.selftext}</Card.Text>
+              </Card.Body>
+          </Card>
+      </div>
+        
+
+          
+        ))}
+        
+      </ul>
+    </div>
+{/* 
 <Card style={{padding:"2%", marginTop:"2%"}}>
     <Card.Img variant="top" style={{width:"100%"}} src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" />
     <Card.Body>
@@ -173,7 +219,9 @@ function Reddit() {
         of the card's content.
       </Card.Text>
     </Card.Body>
-  </Card>
+  </Card> */}
+
+  
 
 
 
@@ -293,6 +341,9 @@ function Reddit() {
   </Card.Body>
 </Card>
  </div>
+
+
+
 
 
 
